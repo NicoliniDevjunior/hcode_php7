@@ -1,11 +1,11 @@
 <?php
 
-require_once("config.php");
+    require_once("config.php");
 
-session_unset($_SESSION['nome']);
+    session_unset($_SESSION['nome']); 
 
-echo $_SESSION['nome'];
+    echo $_SESSION['nome'];
 
-session_destroy();
+    session_destroy();
 
 ?>

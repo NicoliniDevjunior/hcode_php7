@@ -1,29 +1,29 @@
 <?php
 
-require_once("config.php");
+    require_once("config.php");
 
-echo session_save_path();
+    echo session_save_path();
 
-echo "<br>";
+    echo "<br>";
 
-var_dump(session_status());
+    var_dump(session_status());
 
-echo "<br>";
+    echo "<br>";
 
-switch(session_status()) {
+    switch(session_status()) {
 
-    case PHP_SESSION_DISABLED:
-    echo "Sessões desabilitadas";
-    break;
+        case PHP_SESSION_DISABLED:
+        echo "Sessões desabilitadas";
+        break;
 
-    case PHP_SESSION_NONE:
-    echo "Sessões habilitadas, mas não existem";
-    break;
+        case PHP_SESSION_NONE:
+        echo "Sessões habilitadas, mas não existem";
+        break;
 
-    case PHP_SESSION_ACTIVE:
-    echo "Sessões habilitadas e existem";
-    break;
+        case PHP_SESSION_ACTIVE:
+        echo "Sessões habilitadas e existem";
+        break;
 
-}
+    }
 
 ?>
