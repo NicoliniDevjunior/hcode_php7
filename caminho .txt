@@ -1,1 +1,1 @@
-http://localhost/udmay_cursos/hcode_php7/secao3/aula_18-strings
+http://localhost/Hcode_PHP/hcode_php7/secao-6-session/aula-31/exemplo-5.php
