@@ -1,1 +1,1 @@
-http://localhost/Hcode_PHP/hcode_php7/secao-6-session/aula-31/exemplo-5.php
+http://localhost/Hcode_PHP/hcode_php7/secao-8-datas/aula-38/exemplo-1.php
