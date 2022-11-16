@@ -20,8 +20,9 @@ class Endereco {
 
     }
 
-    public function __toString(){
+    public function __toString(){ //  Serve para Serializar o objeto, retornar os valores em forma de string
 
+        // Concateno os valores e retorno o valor atravez do metodo magico __toString()
         return $this->logradouro.", ".$this->numero." - ".$this->cidade;
 
     }

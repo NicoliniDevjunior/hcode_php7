@@ -1,1 +1,1 @@
-httpost/Hcode_PHP/hcode_php7/secao-9-poo/aula-44/exemplo-3.php
+http://localhost/Hcode_PHP/hcode_php7/secao-9-poo/aula-44/exemplo-3.php

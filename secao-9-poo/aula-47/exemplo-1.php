@@ -1,43 +1,46 @@
 <?php
+    // https://www.php.net/manual/pt_BR/language.oop5.inheritance.php
 
-class Documento {
+    class Documento { // Classe PAI
 
-    private $numero;
+        private $numero;
 
-    public function getNumero() {
+        public function getNumero() {
 
-        return $this->numero;
+            return $this->numero; // retorno Esse VALOR
 
-    }
+        }
 
-    public function setNumero($n) {
+        public function setNumero($n) {
 
-        $this->numero = $n;
+            $this->numero = $n; // Essa VARIAVEL recebe VALOR
 
-    }
-
-}
-
-class CPF extends Documento {
-
-    public function validar():bool {
-
-        $numeroCPF = $this->getNumero();
-
-        return true;
+        }
 
     }
 
-}
+    // A subclasse CPF herda(extends) todos os métodos públicos e protegidos, propriedades e constantes da classe pai.
+    class CPF extends Documento { // Essa classe CPF é FILHA da classe Documento PAI
+        // A classe filha acessa os metodos e atributos da classe pai mas o pai não acesssa os da classe filha.
+        
+        public function validar():bool { // Defino que essa função retorna um valor boleano
 
-$doc = new CPF();
+            $numeroCPF = $this->getNumero();
 
-$doc->setNumero("111222333-44");
+            return true;
 
-var_dump($doc->validar());
+        }
 
-echo "<br/>";
+    }
 
-echo $doc->getNumero();
+    $doc = new CPF();
+
+    $doc->setNumero("111222333-44");
+
+    var_dump($doc->validar()); // imprimo um valor boleano
+
+    echo "<br/>";
+
+    echo $doc->getNumero();
 
 ?>

@@ -2,11 +2,12 @@
 
     class Carro {
 
-        private $modelo;
+        // Atributos
+        private $modelo; 
         private $motor;
         private $ano;
         
-        // Inicio com o get para pegar e Modelo com M maiusculo que é composto
+        // Inicio o metodo com o get para pegar e Modelo com M maiusculo que é composto
         public function getModelo() {
 
             return $this->modelo; // $this = esse -> modolo ou objeto
@@ -21,7 +22,7 @@
         }
 
         //get pego os valores
-        public function getMotor():float {
+        public function getMotor():float { // Usando o :float eu declaro o tipo de retorno desse metodo nesse caso o valor é decimal
 
             return $this->motor;
 
@@ -34,7 +35,7 @@
 
         }
 
-        public function getAno(){
+        public function getAno():int{ // Usando o :int eu declaro o tipo de retorno desse  metodo nesse caso o valor é inteiro 
 
             return $this->ano;
 
@@ -60,7 +61,7 @@
 
     }
 
-    $gol = new Carro();
+    $gol = new Carro(); // a palafra new eu Instancio a classe Carro
     $gol->setModelo("Gol GT");
     $gol->setMotor("1.6");
     $gol->setAno("2017");
